@@ -1,4 +1,3 @@
+import numpy as np
 
-graph = [[0, 1],
-         [3, 2],
-         [0, 3]]
+graph = np.array([[0, 1], [3, 2], [0, 3]])
