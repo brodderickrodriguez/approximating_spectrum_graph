@@ -1,7 +1,7 @@
 
 import numpy as np
 import random as rd
-import RecoverDensity
+import recover_density
 
 
 def est_graph_spectrum(edge_list, degree, start, s, k, x):
@@ -28,7 +28,7 @@ def est_graph_spectrum(edge_list, degree, start, s, k, x):
             h[i] = x_count[i] / s
 
         f_k = np.ones(1, k)
-        (rec_pdf, t) = RecoverDensity.recover_density(h, x, f_k)
+        (rec_pdf, t) = recover_density.recover_density(h, x, f_k)
 
         ag_pdf += rec_pdf
 
