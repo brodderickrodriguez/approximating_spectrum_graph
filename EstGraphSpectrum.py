@@ -33,3 +33,4 @@ def est_graph_spectrum(edge_list, degree, start, s, k, x):
         ag_pdf += rec_pdf
 
     ag_pdf /= trials
+    return ag_pdf
